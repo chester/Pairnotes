@@ -1,0 +1,17 @@
+<div *ngIf="note" class="row">
+  <div class="col-md-12">
+    <h2 *ngIf="note._id">Note</h2>
+    <h2 *ngIf="!note._id">New Note</h2>
+  </div>
+</div>
+<div *ngIf="note" class="row">
+  <form class="col-md-12">
+    <div class="form-group">
+      <label for="note-content">Content</label>
+      <input class="form-control" name="note-content" [(ngModel)]="note.content" placeholder="Type new note"/>
+    </div>
+    <button class="btn btn-primary" *ngIf="!note._id" (click)="createNote(note)">Create</button>
+    <button class="btn btn-info" *ngIf="note._id" (click)="updateNote(note)">Update</button>
+    <button class="btn btn-danger" *ngIf="note._id" (click)="deleteNote(note._id)">Delete</button>
+  </form>
+</div>
