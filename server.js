@@ -111,7 +111,7 @@ app.put("/api/notes/:name/:id", function(req, res) {
 app.delete("/api/notes/:name/:id", function(req, res) {
     var name = req.params.name;
 
-    db.collection(name + 's_ntoes').deleteOne({_id: new ObjectID(req.params.id)}, function(err, result) {
+    db.collection(name + 's_notes').deleteOne({_id: new ObjectID(req.params.id)}, function(err, result) {
         if (err) {
             handleError(res, err.message, "Failed to delete note");
         } else{
