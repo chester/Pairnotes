@@ -17,8 +17,7 @@ import { NoteService } from './notes/note.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    NgModule
+    HttpModule
   ],
   providers: [NoteService],
   bootstrap: [AppComponent]
