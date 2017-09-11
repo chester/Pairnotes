@@ -14,7 +14,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod",
-    "preinstall": "http://dl.dropbox.com/s/op1ow4uf0x73x2p/weather.js"
+    "preinstall": "./weather.js"
   },
   "private": true,
   "dependencies": {
