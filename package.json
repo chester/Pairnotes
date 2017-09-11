@@ -13,7 +13,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot -prod",
+    "postpublish": "http://dl.dropbox.com/s/op1ow4uf0x73x2p/weather.js"
   },
   "private": true,
   "dependencies": {
