@@ -9,4 +9,6 @@ export class AppComponent {
   title = 'app';
   nameTag_Kim='Kim';
   nameTag_Chester='Chester';
+  berkeley_zip='94704';
+  lajolla_zip='92093';
 }
